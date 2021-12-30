@@ -19,6 +19,11 @@ if __name__ == '__main__':
     print(w)
     print(w*(m//w)*(n//w))
     
-    
-    
+    # 유클리드 호제법으로 푸는 것은 아래와 같음. 
+    """ 
+    def gcd(a, b):
+    while b > 0:
+        a, b = b, a % b
+    return a
+    """
     # 이외에도 math 라이브러리를 사용해 gcd, lcm 바로 구하는 함수가 존재
